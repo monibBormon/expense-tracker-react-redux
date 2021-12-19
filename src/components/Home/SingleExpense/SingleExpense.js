@@ -27,7 +27,7 @@ const SingleExpense = ({ item, notify }) => {
                     <h4 className='font-semibold text-lg'><i className="fas fa-dollar-sign"></i> {item.amount}</h4>
                 </div>
                 <div className="delete-icon cursor-pointer" onClick={handleDelete} title='Want to delete?'>
-                    <i class="far fa-trash-alt"></i>
+                    <i className="far fa-trash-alt"></i>
                 </div>
             </div>
         </div>
