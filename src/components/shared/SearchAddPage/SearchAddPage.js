@@ -1,11 +1,15 @@
 import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
+import { searchExpense } from '../../../redux/actions/expenses';
 
 const SearchAddPage = () => {
     const [query, setQuery] = useState('')
+    const dispatch = useDispatch()
 
     const handleQuery = e => {
         setQuery(e.target.value)
+        dispatch(searchExpense(e.target.value))
     }
     return (
         <div>
